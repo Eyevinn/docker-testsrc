@@ -5,13 +5,13 @@ A Docker image to generate an SRT test source. Source is generated using gstream
 ## Running
 
 ```
-docker run --rm -p 1234:1234/udp eyevinntechnology:testsrc
+docker run --rm -p 1234:1234/udp eyevinntechnology/testsrc
 ```
 
 You will then have an SRT test source available at `srt://127.0.0.1:1234`. To use another port you just change the port mapping:
 
 ```
-docker run --rm -p 9234:1234/udp eyevinntechnology:testsrc
+docker run --rm -p 9234:1234/udp eyevinntechnology/testsrc
 ```
 
 Then the SRT test source is available at `srt://127.0.0.1:9234`
